@@ -38,6 +38,18 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, AddandEditIngredientActivity.class);
             startActivity(intent);
         });
+
+        Button navRecipes = findViewById(R.id.buttonNavRecipes);
+        navRecipes.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SuggestedRecipesActivity.class);
+            startActivity(intent);
+        });
+
+        Button navSettings = findViewById(R.id.buttonNavSettings);
+        navSettings.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, Settings.class);
+            startActivity(intent);
+        });
     }
 
     @Override
