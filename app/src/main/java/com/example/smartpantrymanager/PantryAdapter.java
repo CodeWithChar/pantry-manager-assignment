@@ -30,7 +30,7 @@ public class PantryAdapter extends RecyclerView.Adapter<PantryAdapter.PantryView
     @Override
     public PantryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_pantry_row, parent, false);
+                .inflate(R.layout.item_recipe_row, parent, false);
         return new PantryViewHolder(view);
     }
 
