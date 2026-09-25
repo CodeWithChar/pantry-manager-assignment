@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/faded_ingredient_background">
+    android:background="@color/bone">
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,7 +25,6 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center"
         android:padding="24dp"
         android:text="There's no recipes that match your pantry. Add more ingredients to see the recipes"
         android:textSize="16sp"

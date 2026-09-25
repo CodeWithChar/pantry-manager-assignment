@@ -22,7 +22,6 @@
                 android:textSize="26sp"
                 android:textStyle="bold"
                 android:text="Recipe Name"
-                android:gravity="center"
                 android:textColor="@color/cafe_noir"/>
 
             <TextView
