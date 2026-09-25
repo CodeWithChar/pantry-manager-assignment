@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/bone">
 
     <TextView
         android:layout_width="wrap_content"
@@ -10,7 +11,9 @@
         android:text="My Pantry"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:padding="16dp" />
+        android:textColor="@color/cafe_noir"
+        android:padding="16dp"
+        android:gravity="center"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewPantry"
@@ -26,6 +29,7 @@
         android:gravity="center"
         android:text="Your pantry is empty. Tap + to add an ingredient."
         android:textSize="16sp"
+        android:textColor="@color/light_grey_text"
         android:visibility="gone" />
 
     <Button
@@ -33,13 +37,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="+ Add Ingredient"
+        android:backgroundTint="@color/raw_umber"
+        android:textColor="@color/white"
         android:padding="16dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#F0F0F0">
+        android:background="@color/drab_dark_brown">
 
         <Button
             android:id="@+id/buttonNavPantry"
@@ -47,21 +53,26 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Pantry"
-            android:backgroundTint="#DDDDDD" />
+            android:backgroundTint="@color/kombu_green"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/buttonNavRecipes"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Recipes" />
+            android:text="Recipes"
+            android:backgroundTint="@color/drab_dark_brown"
+            android:textColor="@color/bone" />
 
         <Button
             android:id="@+id/buttonNavSettings"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Settings" />
+            android:text="Settings"
+            android:backgroundTint="@color/drab_dark_brown"
+            android:textColor="@color/bone" />
 
     </LinearLayout>
 

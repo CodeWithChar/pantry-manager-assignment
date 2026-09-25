@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Primary palette -->
+    <color name="kombu_green">#354024</color>
+    <color name="moss_green">#8F884F</color>
+    <color name="raw_umber">#9E6438</color>
+    <color name="spiced_wine">#743014</color>
+
+    <!-- Backgrounds -->
+    <color name="bone">#E5D7C4</color>
+    <color name="ecru">#D3AF7C</color>
+
+    <!-- Text -->
+    <color name="cafe_noir">#4C3D19</color>
+    <color name="drab_dark_brown">#3E401F</color>
+
+    <!-- Neutral -->
+    <color name="white">#FFFFFF</color>
+    <color name="light_grey_text">#777777</color>
 </resources>

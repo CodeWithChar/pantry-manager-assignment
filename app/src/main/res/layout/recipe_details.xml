@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/bone">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,7 +21,9 @@
                 android:layout_height="wrap_content"
                 android:textSize="26sp"
                 android:textStyle="bold"
-                android:text="Recipe Name" />
+                android:text="Recipe Name"
+                android:gravity="center"
+                android:textColor="@color/cafe_noir"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -28,7 +31,8 @@
                 android:layout_marginTop="24dp"
                 android:text="Ingredients"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/cafe_noir"/>
 
             <TextView
                 android:id="@+id/textDetailIngredients"
@@ -36,7 +40,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:textSize="15sp"
-                android:text="" />
+                android:text=""
+                android:textColor="@color/cafe_noir"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -44,7 +49,8 @@
                 android:layout_marginTop="24dp"
                 android:text="Method"
                 android:textSize="18sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/cafe_noir"/>
 
             <TextView
                 android:id="@+id/textDetailSteps"
@@ -52,6 +58,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:textSize="15sp"
+                android:text=""
+                android:textColor="@color/cafe_noir"/>
+
+            <TextView
+                android:id="@+id/textFunFact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:padding="12dp"
+                android:background="@color/ecru"
+                android:textColor="@color/cafe_noir"
+                android:textStyle="italic"
+                android:textSize="14sp"
+                android:visibility="gone"
                 android:text="" />
 
         </LinearLayout>

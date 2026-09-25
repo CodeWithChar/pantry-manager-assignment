@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/faded_ingredient_background">
 
     <TextView
         android:layout_width="wrap_content"
@@ -10,7 +11,8 @@
         android:text="Suggested Recipes"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:textColor="@color/cafe_noir"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewSuggested"
@@ -25,8 +27,9 @@
         android:layout_weight="1"
         android:gravity="center"
         android:padding="24dp"
-        android:text="No recipes match your pantry. Want to add more ingredients?"
+        android:text="There's no recipes that match your pantry. Add more ingredients to see the recipes"
         android:textSize="16sp"
+        android:textColor="@color/light_grey_text"
         android:visibility="gone" />
 
 </LinearLayout>

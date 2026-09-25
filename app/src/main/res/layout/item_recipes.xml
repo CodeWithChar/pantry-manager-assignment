@@ -12,14 +12,16 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:text="Recipe Name" />
+        android:text="Recipe Name"
+        android:gravity="center"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Tap to view full recipe"
+        android:gravity="center"
         android:textSize="13sp"
-        android:textColor="#777777" />
+        android:textColor="#777777"/>
 
 </LinearLayout>

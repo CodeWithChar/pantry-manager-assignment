@@ -21,6 +21,7 @@ public class RecipeDetails extends AppCompatActivity {
         databaseAssistant = new DatabaseAssistant(this);
 
         TextView nameText = findViewById(R.id.textDetailName);
+        TextView funFactText = findViewById(R.id.textFunFact);
         TextView ingredientsText = findViewById(R.id.textDetailIngredients);
         TextView stepsText = findViewById(R.id.textDetailSteps);
 
@@ -40,6 +41,7 @@ public class RecipeDetails extends AppCompatActivity {
             stepsText.setText(steps);
         }
         recipeCursor.close();
+        boolean factShown = false;
         StringBuilder ingredientsList = new StringBuilder();
         Cursor ingredientCursor = databaseAssistant.getIngredientsForRecipe(recipeId);
         if (ingredientCursor.moveToFirst()) {
@@ -53,6 +55,15 @@ public class RecipeDetails extends AppCompatActivity {
 
                 ingredientsList.append("• ").append(quantity).append(" ").append(unit)
                         .append(" ").append(ingredientName).append("\n");
+
+                if (!factShown) {
+                    String fact = FunFacts.getFact(ingredientName);
+                    if (fact != null) {
+                        funFactText.setText(fact);
+                        funFactText.setVisibility(android.view.View.VISIBLE);
+                        factShown = true;
+                    }
+                }
             } while (ingredientCursor.moveToNext());
         }
         ingredientCursor.close();

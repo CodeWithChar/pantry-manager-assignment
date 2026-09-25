@@ -45,12 +45,7 @@ public class SuggestedRecipesActivity extends AppCompatActivity {
     }
 
     private void loadSuggestedRecipes() {
-        // Step 1: ask RecipeMatcher WHICH recipes qualify.
         List<Long> suggestedIds = recipeConnector.getSuggestedRecipeIds();
-
-        // Step 2: load the full details (name, etc.) for just
-        // those recipes, so the adapter has real Recipe objects
-        // to display, not just bare IDs.
         List<Recipe> matchingRecipes = new ArrayList<>();
         for (Long id : suggestedIds) {
             Cursor cursor = databaseAssistant.getRecipeById(id);

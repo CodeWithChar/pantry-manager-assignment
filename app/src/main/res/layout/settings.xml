@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="@color/bone">
 
     <TextView
         android:layout_width="wrap_content"
@@ -11,7 +12,8 @@
         android:text="Settings"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/cafe_noir"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +26,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Preferred units"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/cafe_noir"/>
 
         <Switch
             android:id="@+id/switchUnits"
