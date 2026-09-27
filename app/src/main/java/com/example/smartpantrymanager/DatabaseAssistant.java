@@ -229,7 +229,6 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         insertIngredientRow(db, r16, "tamari soy sauce", 1, "tbsp");
     }
 
-    //small helper so seedRecipes() above isn't cluttered with raw insert calls//
     private long insertRecipeRow(SQLiteDatabase db, String name, String steps) {
         ContentValues values = new ContentValues();
         values.put(COL_RECIPE_NAME, name);
@@ -237,7 +236,6 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         return db.insert(TABLE_RECIPES, null, values);
     }
 
-    //small helper so seedRecipes() above isn't cluttered with raw insert calls//
     private void insertIngredientRow(SQLiteDatabase db, long recipeId, String ingredientName, double quantity, String unit) {
         ContentValues values = new ContentValues();
         values.put(COL_RI_RECIPE_ID, recipeId);
@@ -254,9 +252,6 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_PANTRY);
         onCreate(db);
     }
-
-    //this Adds a new pantry item and then returns the new row's ID or will return a -1 if
-    //the insert failed for some reason//
     public long addPantryItem(String name, double quantity, String unit, String expiryDate) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -329,8 +324,6 @@ public class DatabaseAssistant extends SQLiteOpenHelper {
         db.close();
         return newId;
     }
-
-    //this reads every recipe in ordered by name.//
     public Cursor getAllRecipes() {
         SQLiteDatabase db = this.getReadableDatabase();
         return db.rawQuery("SELECT * FROM " + TABLE_RECIPES + " ORDER BY " + COL_RECIPE_NAME, null);

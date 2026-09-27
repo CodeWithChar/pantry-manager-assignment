@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-//this connects a list of PantryItem objects to the RecyclerView on the Pantry List screen.//
+//this connects a list of PantryItems objects to the RecyclerView on the Pantry List screen.//
 public class PantryAdapter extends RecyclerView.Adapter<PantryAdapter.PantryViewHolder> {
 
     private List<PantryItems> pantryItems;

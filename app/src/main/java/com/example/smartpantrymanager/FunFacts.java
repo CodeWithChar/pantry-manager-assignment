@@ -18,7 +18,7 @@ public class FunFacts {
         FACTS.put("tomato", "Did you know: tomatoes are botanically a fruit, but were legally classified as a vegetable in the US in 1893.");
     }
 
-    //this returns a fun fact for t recipe that was given
+    //this returns a fun fact for the recipe that was given
     //if there is no fact it will return as null
     public static String getFact(String ingredientName) {
         return FACTS.get(ingredientName.toLowerCase().trim());
